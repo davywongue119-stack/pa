@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV — Wongue Davy Cédric — Stagiaire Ingénieur Qualité</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A3D62;
+  --ink:#1A1A1A;
+  --mut:#555;
+  --line:#D9D9D9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#F5F5F5;}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  font-size:10.5px;line-height:1.5;color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:14px auto;
+  background:#fff;
+  padding:16mm 16mm 14mm 16mm;
+  box-shadow:0 4px 24px -12px rgba(0,0,0,.15);
+}
+
+/* HEADER */
+.header{
+  padding-bottom:12px;
+  margin-bottom:16px;
+  border-bottom:1px solid var(--navy);
+}
+.name{
+  font-size:20px;font-weight:700;letter-spacing:.02em;
+  color:var(--navy);line-height:1.1;
+}
+.title{
+  font-size:10px;font-weight:500;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--mut);
+  margin-top:5px;
+}
+.contact{
+  margin-top:8px;
+  font-size:10px;color:var(--mut);
+}
+.contact span{margin-right:14px;}
+.contact span::before{
+  content:'·';margin-right:6px;color:var(--navy);
+}
+.contact span:first-child::before{content:'';margin:0;}
+
+/* SECTIONS */
+.section{margin-bottom:14px;}
+.section-title{
+  font-size:11px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--navy);
+  padding-bottom:4px;margin-bottom:8px;
+  border-bottom:1px solid var(--line);
+}
+
+/* PROFIL */
+.profil{
+  font-size:10.5px;line-height:1.6;
+  text-align:justify;color:var(--ink);
+}
+.profil b{font-weight:600;}
+
+/* CERTIFICATIONS */
+.certs{display:flex;flex-direction:column;gap:3px;}
+.cert{
+  display:grid;grid-template-columns:1fr auto;gap:14px;
+  align-items:baseline;
+  padding:3px 0;
+  font-size:10.2px;
+}
+.cert .t{font-weight:500;color:var(--ink);}
+.cert .t em{
+  font-style:italic;font-weight:400;color:var(--mut);
+  font-size:9.6px;
+}
+.cert .meta{
+  font-size:9.4px;color:var(--mut);
+  text-align:right;white-space:nowrap;
+}
+.cert.pending .meta{font-style:italic;}
+
+/* EXPERIENCE */
+.exp{
+  display:grid;grid-template-columns:80px 1fr;gap:14px;
+  padding:7px 0;
+}
+.exp + .exp{border-top:1px solid var(--line);}
+.exp-date{
+  font-size:9.4px;color:var(--mut);
+  line-height:1.5;padding-top:1px;
+  white-space:nowrap;
+}
+.exp-body h3{
+  font-size:11px;font-weight:600;color:var(--ink);
+  line-height:1.3;margin-bottom:2px;
+}
+.exp-body .place{
+  font-size:9.8px;color:var(--mut);
+  font-style:italic;margin-bottom:4px;
+}
+.exp-body ul{
+  list-style:none;display:flex;flex-direction:column;gap:2px;
+}
+.exp-body ul li{
+  position:relative;padding-left:10px;
+  font-size:10px;line-height:1.5;
+  color:var(--ink);
+}
+.exp-body ul li::before{
+  content:'–';position:absolute;left:0;top:0;
+  color:var(--mut);
+}
+.exp-body ul li b{font-weight:600;}
+
+/* FORMATION */
+.form{
+  display:flex;flex-direction:column;gap:6px;
+}
+.form-item{
+  display:grid;grid-template-columns:80px 1fr;gap:14px;
+  font-size:10.2px;
+}
+.form-item .yr{
+  font-size:9.4px;color:var(--mut);padding-top:1px;
+  white-space:nowrap;
+}
+.form-item h4{
+  font-weight:600;font-size:10.4px;line-height:1.3;
+}
+.form-item p{
+  font-size:9.8px;color:var(--mut);font-style:italic;
+}
+
+/* COMPETENCES */
+.skills{
+  display:flex;flex-direction:column;gap:5px;
+}
+.skill-row{
+  display:grid;grid-template-columns:120px 1fr;gap:14px;
+  font-size:10.2px;line-height:1.5;
+}
+.skill-row .lbl{
+  font-weight:600;color:var(--ink);
+}
+.skill-row .val{color:var(--ink);}
+.skill-row .val b{font-weight:600;}
+.skill-row .val .sep{color:var(--mut);}
+
+/* FOOTER */
+.foot{
+  margin-top:16px;padding-top:8px;
+  border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;
+  font-size:8.8px;color:var(--mut);
+  letter-spacing:.04em;
+}
+
+@media print{
+  html,body{background:#fff;}
+  .page{
+    margin:0;box-shadow:none;width:auto;min-height:auto;
+    padding:14mm 14mm 12mm 14mm;
+  }
+  @page{size:A4;margin:0;}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="header">
+    <div class="name">Wongue Davy Cédric</div>
+    <div class="title">Ingénieur Qualité · Oil &amp; Gas</div>
+    <div class="contact">
+      <span>Douala, Cameroun</span>
+      <span>+237 698 385 430</span>
+      <span>davycedricw@outlook.com</span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Profil</h2>
+    <p class="profil">
+      Ingénieur des procédés (2025), formé au management de la qualité et certifié en production et traitement du gaz naturel (L&amp;T Edutech). Expérience de la standardisation de procédés, de la vérification documentaire, du suivi des non-conformités et du reporting QHSE. Bilingue français-anglais (TOEFL C1), avec un souci constant du détail, d'intégrité et d'apprentissage rapide au service de l'équipe Qualité de PARLYM Cameroun.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs">
+      <div class="cert">
+        <div class="t">Natural Gas Production and Processing <em>— L&amp;T Edutech</em></div>
+        <div class="meta">2025</div>
+      </div>
+      <div class="cert">
+        <div class="t">ISO 9001:2015 — Système de Management de la Qualité <em>— Auto-formation encadrée</em></div>
+        <div class="meta">2025</div>
+      </div>
+      <div class="cert">
+        <div class="t">Internal Auditing: Fundamental Principles <em>— Alison</em></div>
+        <div class="meta">2024</div>
+      </div>
+      <div class="cert">
+        <div class="t">Certificat d'anglais niveau C1 <em>— TOEFL</em></div>
+        <div class="meta">2023</div>
+      </div>
+      <div class="cert pending">
+        <div class="t">CAPM® — Certified Associate in Project Management <em>— Project Management Institute (PMI)</em></div>
+        <div class="meta">En cours</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Expérience professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-date">Mai 2025<br>— Nov. 2025</div>
+      <div class="exp-body">
+        <h3>Stagiaire — Procédés &amp; Production</h3>
+        <div class="place">Michele's Industries, Douala</div>
+        <ul>
+          <li>Analysé les indicateurs de production sous Excel et conduit des actions d'amélioration continue : recyclage des conditionnements <b>+40 %</b>, arrêts non planifiés réduits de <b>15 %</b>.</li>
+          <li>Standardisé <b>3 postes clés</b> par la rédaction de procédures opératoires (SOP) ; contrôlé la conformité des produits aux exigences <b>ANOR</b> et tracé les écarts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-date">Juil. 2024<br>— Déc. 2024</div>
+      <div class="exp-body">
+        <h3>Consultant indépendant — Standardisation des procédés</h3>
+        <div class="place">AVRAM APTUS, Douala</div>
+        <ul>
+          <li>Accompagné <b>04 micro-industries</b> dans la structuration de leurs procédures (SOP, plans de maîtrise) ; réduit la variabilité produit de <b>18 %</b>.</li>
+          <li>Formé <b>10 opérateurs</b> aux bonnes pratiques et aux exigences de conformité ; contribué à l'obtention de <b>01 agrément</b>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-date">Janv. 2024<br>— Juin 2024</div>
+      <div class="exp-body">
+        <h3>Stagiaire de fin d'études — Procédés &amp; Formulation</h3>
+        <div class="place">FBI — Food and Beverages Industries, Douala</div>
+        <ul>
+          <li>Optimisé une formulation industrielle : compromis stabilité/coût amélioré de <b>12 %</b> par bilans matière et énergie.</li>
+          <li>Réduit les pertes process de <b>8 %</b> ; élaboré un plan de maîtrise avec <b>7 points critiques validés</b>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-date">Juil. 2022<br>— Sept. 2022</div>
+      <div class="exp-body">
+        <h3>Stagiaire — Contrôle Qualité &amp; Conformité</h3>
+        <div class="place">OK Foods Cameroun, Douala</div>
+        <ul>
+          <li>Participé aux contrôles sanitaires et au suivi des Bonnes Pratiques d'Hygiène ; identifié les écarts aux procédures QHSE et proposé des actions préventives et correctives.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-date">Juil. 2021<br>— Sept. 2021</div>
+      <div class="exp-body">
+        <h3>Stagiaire — Production &amp; Optimisation de processus</h3>
+        <div class="place">SIC Cacao, Douala</div>
+        <ul>
+          <li>Suivi les paramètres critiques de production (torréfaction, broyage, conchage) ; analysé les dysfonctionnements par la méthode <b>Ishikawa</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Formation</h2>
+    <div class="form">
+      <div class="form-item">
+        <div class="yr">2025</div>
+        <div>
+          <h4>Diplôme d'ingénieur des procédés</h4>
+          <p>Université Catholique Saint-Jérôme de Douala</p>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="yr">2020</div>
+        <div>
+          <h4>Cycle préparatoire intégré, Sciences de l'ingénieur</h4>
+          <p>Université Catholique Saint-Jérôme de Douala</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Compétences</h2>
+    <div class="skills">
+      <div class="skill-row">
+        <div class="lbl">Qualité &amp; HSE</div>
+        <div class="val">ISO 9001:2015 · Audit interne · Non-conformités · Amélioration continue · QHSE · Ishikawa</div>
+      </div>
+      <div class="skill-row">
+        <div class="lbl">Oil &amp; Gas</div>
+        <div class="val">Natural Gas Production &amp; Processing · Procédés industriels · Bilans matière &amp; énergie · Standardisation (SOP)</div>
+      </div>
+      <div class="skill-row">
+        <div class="lbl">Gestion de projet</div>
+        <div class="val">CAPM® (en cours) · Coordination transverse · Suivi des livrables</div>
+      </div>
+      <div class="skill-row">
+        <div class="lbl">Outils</div>
+        <div class="val">Excel (analyse de données) · Word · PowerPoint · SAP (notions)</div>
+      </div>
+      <div class="skill-row">
+        <div class="lbl">Langues</div>
+        <div class="val">Français (natif) · Anglais (courant — <b>TOEFL C1</b>) · Allemand (notions)</div>
+      </div>
+      <div class="skill-row">
+        <div class="lbl">Qualités</div>
+        <div class="val">Souci du détail et exactitude numérique · Intégrité et confidentialité · Esprit d'équipe · Rigueur · Capacité d'apprentissage rapide</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div>Wongue Davy Cédric — 2026</div>
+    <div>Stagiaire Ingénieur Qualité · PARLYM Cameroun</div>
+  </div>
+
+</div>
+
+<script>
+document.body.style.opacity='0';
+document.body.style.transition='opacity .25s ease';
+window.addEventListener('load', function(){ document.body.style.opacity='1'; });
+</script>
+
+</body>
+</html>
