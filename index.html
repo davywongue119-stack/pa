@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wongue Davy Cédric — Stagiaire Ingénieur Qualité · PARLYM</title>
+<title>Wongue Davy Cédric — Finance Graduate Trainee · ofi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -28,7 +28,7 @@ body{
   font-size:13px;line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
-#histoire,#certificats,#competences,#contact,#parlym,section[id]{scroll-margin-top:96px;}
+#histoire,#certificats,#competences,#contact,#ofi,section[id]{scroll-margin-top:96px;}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit}
@@ -174,7 +174,7 @@ button{font-family:inherit}
   .head-nav{gap:14px;font-size:10px}
   .head-nav a:nth-child(3){display:none}
   html{scroll-padding-top:80px}
-  #histoire,#certificats,#competences,#contact,#parlym,section[id]{scroll-margin-top:80px}
+  #histoire,#certificats,#competences,#contact,#ofi,section[id]{scroll-margin-top:80px}
 }
 @media(max-width:520px){
   .brand-name{display:none}
@@ -223,7 +223,7 @@ button{font-family:inherit}
 }
 @keyframes highlightDraw{to{transform:scaleX(1)}}
 .hero-lede{
-  font-size:12px;color:var(--mut);margin-top:20px;max-width:40ch;
+  font-size:12px;color:var(--mut);margin-top:20px;max-width:38ch;
   opacity:0;animation:fadeUp .8s var(--ease) .8s forwards;
 }
 @keyframes fadeUp{
@@ -364,7 +364,7 @@ button{font-family:inherit}
 .section-lede.rv.on{opacity:1;transform:none}
 @media(max-width:760px){.section-ss .head-row{flex-direction:column;gap:16px}}
 
-/* WHY PARLYM */
+/* WHY OFI */
 .why-ofi{
   padding:120px var(--gutter) 100px;
   border-top:1px solid var(--line);position:relative;
@@ -683,7 +683,7 @@ button{font-family:inherit}
 
 /* CERTIFICATS */
 .cert-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
   margin-top:20px;perspective:1000px;
 }
 .cert-card{
@@ -697,6 +697,8 @@ button{font-family:inherit}
 .cert-card:nth-child(1).rv{transition-delay:.05s}
 .cert-card:nth-child(2).rv{transition-delay:.15s}
 .cert-card:nth-child(3).rv{transition-delay:.25s}
+.cert-card:nth-child(4).rv{transition-delay:.35s}
+.cert-card:nth-child(5).rv{transition-delay:.45s}
 .cert-card:hover{
   border-color:var(--ink);transform:translateY(-8px);
   box-shadow:0 26px 50px -22px rgba(107,27,90,.32);
@@ -720,7 +722,6 @@ button{font-family:inherit}
   transform:scale(1.2) rotate(.5deg);
   filter:blur(12px) saturate(.75);
 }
-/* Aperçu visible (non floutée) */
 .cert-thumb.preview-visible img{
   filter:blur(0) saturate(1);
   transform:scale(1);
@@ -1065,7 +1066,7 @@ button{font-family:inherit}
 <body>
 
 <div class="progress-bar" id="progressBar"></div>
-<div class="page-label" data-i18n="page.label">0.1 : Candidature · Stagiaire Ingénieur Qualité</div>
+<div class="page-label" data-i18n="page.label">0.1 : Candidature · Finance Graduate Trainee</div>
 
 <header class="site-head" id="siteHead">
   <div class="brand">
@@ -1074,8 +1075,8 @@ button{font-family:inherit}
   </div>
   <nav class="head-nav">
     <a href="#histoire" data-target="histoire" data-i18n="nav.parcours">Parcours</a>
-    <a href="#certificats" data-target="certificats" data-i18n="nav.certificats">Certifications</a>
-    <a href="#parlym" data-target="parlym" data-i18n="nav.parlym" class="nav-highlight">Pourquoi PARLYM</a>
+    <a href="#certificats" data-target="certificats" data-i18n="nav.certificats">Certificats</a>
+    <a href="#ofi" data-target="ofi" data-i18n="nav.ofi" class="nav-highlight">Pourquoi ofi</a>
     <a href="#contact" data-target="contact" data-i18n="nav.contact">Contact</a>
   </nav>
   <div class="head-right">
@@ -1094,12 +1095,13 @@ button{font-family:inherit}
       <span class="word"><span>Ingénieur</span></span>
       <span class="word"><span>des</span></span>
       <span class="word"><span>procédés,</span></span>
-      <span class="word"><span>qualité</span></span>
-      <span class="word"><span><em>ISO&nbsp;9001</em></span></span>
+      <span class="word"><span>certifié</span></span>
+      <span class="word"><span><em>SAP</em></span></span>
       <span class="word"><span>&amp;</span></span>
-      <span class="word"><span>Oil&nbsp;&amp;&nbsp;Gas.</span></span>
+      <span class="word"><span>comptabilité</span></span>
+      <span class="word"><span>financière.</span></span>
     </h1>
-    <p class="hero-lede" data-i18n="hero.lede">Une candidature pour le stage d'Ingénieur Qualité chez PARLYM Cameroun : déploiement du SMQ, audits internes, gestion des non-conformités et amélioration continue.</p>
+    <p class="hero-lede" data-i18n="hero.lede">Une candidature pour le poste de Finance Graduate Trainee chez ofi Douala : rigueur analytique, souci du détail, intégrité.</p>
     <a href="#certificats" class="link-underline" data-target="certificats" data-i18n="hero.link">Voir les documents</a>
   </div>
 
@@ -1109,11 +1111,11 @@ button{font-family:inherit}
       <div class="rule"></div>
       <div class="h-name">
         Wongue Davy Cédric
-        <em data-i18n="hero.role">Stagiaire Ingénieur Qualité</em>
+        <em data-i18n="hero.role">Finance Graduate Trainee</em>
       </div>
       <div class="h-meta">
         <span><span class="dot"></span><span data-i18n="hero.meta1">Douala, Cameroun</span></span>
-        <span><span class="dot"></span><span data-i18n="hero.meta2">Disponible 6 mois</span></span>
+        <span><span class="dot"></span><span data-i18n="hero.meta2">Disponible</span></span>
       </div>
     </div>
   </div>
@@ -1124,13 +1126,13 @@ button{font-family:inherit}
 <section class="section-ss" id="histoire">
   <div class="head-row">
     <h2 class="h-big" data-i18n-html="parcours.title">
-      <span class="word"><span>Quatre</span></span>
-      <span class="word"><span>piliers</span></span>
-      <span class="word"><span>pour</span></span>
-      <span class="word"><span>la</span></span>
-      <span class="word"><span>qualité.</span></span>
+      <span class="word"><span>Le</span></span>
+      <span class="word"><span>parcours,</span></span>
+      <span class="word"><span>en</span></span>
+      <span class="word"><span>quatre</span></span>
+      <span class="word"><span>temps.</span></span>
     </h2>
-    <p class="section-lede rv" data-i18n="parcours.lede">Diplômé ingénieur des procédés (2025), formé au management de la qualité et certifié en production et traitement du gaz naturel. Un profil construit pour déployer, auditer et améliorer un système qualité dans l'industrie pétrolière et gazière.</p>
+    <p class="section-lede rv" data-i18n="parcours.lede">Diplômé ingénieur des procédés (2025), formé à la comptabilité financière par l'Université de Pennsylvanie, certifié SAP Business Analyst et formé à l'audit interne. Une trajectoire qui relie l'exigence industrielle aux réflexes du contrôle financier.</p>
   </div>
 
   <div class="blend-cards">
@@ -1138,12 +1140,12 @@ button{font-family:inherit}
       <div class="glow"></div>
       <div class="blend-num">01</div>
       <p class="blend-intro" data-i18n-html="card1.intro">
-        Un système qualité n'est pas un classeur : c'est une <em>discipline quotidienne</em> qui protège les opérations, les hommes et les délais.
+        Les principes financiers sont d'abord des principes de vie : ils apprennent à arbitrer, à anticiper, à préserver. <em>Mieux les comprendre, c'est décider mieux.</em>
       </p>
       <div class="blend-foot">
-        <div class="blend-name"><span data-i18n="card1.name">L'exigence</span><span class="circ"></span></div>
-        <div class="blend-sub" data-i18n="card1.sub">Pourquoi la qualité ?</div>
-        <div class="dot-rating">●●●●●</div>
+        <div class="blend-name"><span data-i18n="card1.name">L'appétence</span><span class="circ"></span></div>
+        <div class="blend-sub" data-i18n="card1.sub">Pourquoi la finance ?</div>
+        <div class="dot-rating">●●●●<span class="off">●</span></div>
       </div>
     </article>
 
@@ -1151,11 +1153,11 @@ button{font-family:inherit}
       <div class="glow"></div>
       <div class="blend-num">02</div>
       <p class="blend-intro" data-i18n-html="card2.intro">
-        Auditer un processus, tracer une non-conformité, sécuriser une donnée : <em>les gestes du terrain sont ceux de l'assurance qualité.</em>
+        Vérifier une donnée, suivre un écart, sécuriser une information : <em>les gestes du contrôle qualité sont ceux du contrôle financier.</em>
       </p>
       <div class="blend-foot">
-        <div class="blend-name"><span data-i18n="card2.name">Le contrôle</span><span class="circ"></span></div>
-        <div class="blend-sub" data-i18n="card2.sub">Audits &amp; non-conformités</div>
+        <div class="blend-name"><span data-i18n="card2.name">Le terrain</span><span class="circ"></span></div>
+        <div class="blend-sub" data-i18n="card2.sub">Contrôle, conformité, analyse</div>
         <div class="dot-rating">●●●●●</div>
       </div>
     </article>
@@ -1164,11 +1166,11 @@ button{font-family:inherit}
       <div class="glow"></div>
       <div class="blend-num">03</div>
       <p class="blend-intro" data-i18n-html="card3.intro">
-        ISO 9001:2015, Excel, reporting : des outils qui transforment une exigence normative en <em>processus documenté, mesurable et partageable.</em>
+        SAP, Excel, reporting : des outils qui transforment une donnée brute en <em>décision chiffrée, argumentée et partageable.</em>
       </p>
       <div class="blend-foot">
         <div class="blend-name"><span data-i18n="card3.name">Les outils</span><span class="circ"></span></div>
-        <div class="blend-sub" data-i18n="card3.sub">ISO 9001 · Excel · reporting</div>
+        <div class="blend-sub" data-i18n="card3.sub">SAP · Excel · reporting</div>
         <div class="dot-rating">●●●●<span class="off">●</span></div>
       </div>
     </article>
@@ -1177,11 +1179,11 @@ button{font-family:inherit}
       <div class="glow"></div>
       <div class="blend-num">04</div>
       <p class="blend-intro" data-i18n-html="card4.intro">
-        Oil &amp; Gas, un secteur qui ne laisse aucune place à l'approximation : <em>rigueur, méthode, anglais technique.</em>
+        Diplôme et certifications : les fondations vérifiables d'une <em>reconversion assumée</em> vers la finance.
       </p>
       <div class="blend-foot">
-        <div class="blend-name"><span data-i18n="card4.name">Le cap</span><span class="circ"></span></div>
-        <div class="blend-sub" data-i18n="card4.sub">Oil &amp; Gas · ISO 9001</div>
+        <div class="blend-name"><span data-i18n="card4.name">Les preuves</span><span class="circ"></span></div>
+        <div class="blend-sub" data-i18n="card4.sub">Diplôme &amp; certifications</div>
         <div class="dot-rating">●●●●●</div>
       </div>
     </article>
@@ -1191,12 +1193,12 @@ button{font-family:inherit}
 <section class="two-col" id="terrain">
   <div class="col-text">
     <h2 data-i18n="terrain.title">Le terrain. Cinq expériences industrielles, un même réflexe : vérifier.</h2>
-    <p data-i18n="terrain.p">De la standardisation des procédés au contrôle qualité, j'ai appris à lire un dossier technique, à suivre un écart, à rédiger une non-conformité et à produire un reporting exploitable.</p>
+    <p data-i18n="terrain.p">Du contrôle qualité à la standardisation des procédés, j'ai appris à lire un dossier, à suivre un écart et à produire un reporting fiable, les gestes du quotidien en Finance.</p>
     <ul>
-      <li data-i18n-html="terrain.li1"><b>Standardisation de procédés</b>, 3 postes formalisés (SOP, points de contrôle), gains mesurés : recyclage +40 %, arrêts −15 %.</li>
-      <li data-i18n-html="terrain.li2"><b>Accompagnement d'unités de production</b>, 04 sites appuyés (procédures, plans de maîtrise), variabilité réduite de 18 %.</li>
-      <li data-i18n-html="terrain.li3"><b>Bilans matière et énergie</b>, suivi d'indicateurs, compromis stabilité/coût amélioré de 12 %.</li>
-      <li data-i18n-html="terrain.li4"><b>Contrôles qualité et conformité</b>, suivi QHSE, analyse des causes racines (Ishikawa).</li>
+      <li data-i18n-html="terrain.li1"><b>Michele's Industries</b>, analyse sous Excel, 3 postes standardisés, contrôle de conformité ANOR. Recyclage +40 %, arrêts −15 %.</li>
+      <li data-i18n-html="terrain.li2"><b>AVRAM APTUS</b>, 04 micro-industries accompagnées (SOP, plans HACCP), variabilité réduite de 18 %.</li>
+      <li data-i18n-html="terrain.li3"><b>FBI, Food &amp; Beverages Industries</b>, bilans matière/énergie, compromis stabilité-coût amélioré de 12 %.</li>
+      <li data-i18n-html="terrain.li4"><b>OK Foods · SIC Cacao</b>, contrôles sanitaires, suivi QHSE, analyse Ishikawa.</li>
     </ul>
   </div>
   <div class="col-visual">
@@ -1215,25 +1217,25 @@ button{font-family:inherit}
 
 <section class="two-col reverse" id="outils">
   <div class="col-text">
-    <h2 data-i18n="outils.title">Les outils. ISO 9001 côté norme, Excel côté analyse.</h2>
-    <p data-i18n="outils.p">Les compétences attendues pour déployer un système de management de la qualité, auditer des processus, suivre des non-conformités et produire un reporting clair, sans jargon.</p>
+    <h2 data-i18n="outils.title">Les outils. SAP côté systèmes, Excel côté analyse.</h2>
+    <p data-i18n="outils.p">Les compétences attendues pour saisir et suivre des transactions comptables, contrôler des rapprochements et produire du reporting, sans jargon, avec méthode.</p>
     <ul>
-      <li data-i18n-html="outils.li1"><b>ISO 9001:2015</b> : déploiement, audit interne, amélioration continue</li>
-      <li data-i18n-html="outils.li2"><b>Oil &amp; Gas</b> : production et traitement du gaz naturel (L&amp;T Edutech)</li>
-      <li data-i18n-html="outils.li3"><b>Excel</b> : suivi d'indicateurs, tableaux de bord, gap analysis</li>
-      <li data-i18n-html="outils.li4"><b>Anglais technique</b> : C1, rédaction et communication professionnelle</li>
+      <li data-i18n-html="outils.li1"><b>SAP</b> : SAP Business Analyst Professional Certificate</li>
+      <li data-i18n-html="outils.li2"><b>Excel</b> : Excel Fundamentals for Data Analysis (Macquarie University)</li>
+      <li data-i18n-html="outils.li3"><b>Bureautique</b> : Word, PowerPoint</li>
+      <li data-i18n-html="outils.li4"><b>Analyse</b> : suivi d'indicateurs (KPI), gap analysis, rapprochements</li>
     </ul>
     <a href="#certificats" class="link-underline" data-target="certificats" data-i18n="outils.link">Voir les certifications</a>
   </div>
   <div class="col-visual">
     <div class="visual-panel">
-      <div class="big-num" data-count="3">03</div>
+      <div class="big-num" data-count="5">05</div>
       <div class="big-label" data-i18n="outils.biglabel">Certifications</div>
     </div>
     <div class="info-panel">
       <div class="ip-name" data-i18n="outils.stack">Stack technique</div>
-      <div class="info-row"><span>ISO 9001</span><b data-i18n="outils.certified">Formé</b></div>
-      <div class="info-row"><span>Oil &amp; Gas</span><b data-i18n="outils.certified2">Certifié</b></div>
+      <div class="info-row"><span>SAP</span><b data-i18n="outils.certified">Certifié</b></div>
+      <div class="info-row"><span>Excel</span><b data-i18n="outils.advanced">Avancé</b></div>
       <div class="info-row"><span>Anglais</span><b>C1</b></div>
     </div>
   </div>
@@ -1242,10 +1244,11 @@ button{font-family:inherit}
 <section class="section-ss" id="certificats">
   <div class="head-row">
     <h2 class="h-big" data-i18n-html="certs.title">
-      <span class="word"><span>Certifications</span></span>
-      <span class="word"><span>clés.</span></span>
+      <span class="word"><span>Certificats</span></span>
+      <span class="word"><span>&amp;</span></span>
+      <span class="word"><span>attestations.</span></span>
     </h2>
-    <p class="section-lede rv" data-i18n="certs.lede">Diplôme, certification Oil &amp; Gas et niveau d'anglais : les preuves vérifiables directement alignées sur l'offre PARLYM.</p>
+    <p class="section-lede rv" data-i18n="certs.lede">Diplômes, certificats et attestations vérifiables. Cliquez sur une vignette pour agrandir l'aperçu.</p>
   </div>
 
   <div class="cert-grid" id="certGrid">
@@ -1261,7 +1264,7 @@ button{font-family:inherit}
       <span class="word"><span>deux</span></span>
       <span class="word"><span>forces.</span></span>
     </h2>
-    <p class="section-lede rv" data-i18n="path.lede">De l'exigence industrielle vers le management de la qualité Oil &amp; Gas. La même discipline : comprendre, tracer, décider.</p>
+    <p class="section-lede rv" data-i18n="path.lede">De l'excellence industrielle vers les compétences finance &amp; data. La même exigence : comprendre, chiffrer, décider.</p>
   </div>
 
   <div class="chart-box rv">
@@ -1273,44 +1276,44 @@ button{font-family:inherit}
       <canvas id="chart"></canvas>
     </div>
     <div class="chart-legend">
-      <span><i style="background:#6B1B5A"></i><span data-i18n="chart.legend1">Ingénierie industrielle &amp; procédés</span></span>
-      <span><i style="background:#F58220"></i><span data-i18n="chart.legend2">Qualité, audits &amp; Oil Gas</span></span>
+      <span><i style="background:#6B1B5A"></i><span data-i18n="chart.legend1">Excellence industrielle &amp; qualité</span></span>
+      <span><i style="background:#F58220"></i><span data-i18n="chart.legend2">Compétences finance &amp; data</span></span>
     </div>
   </div>
 </section>
 
-<section class="why-ofi" id="parlym">
+<section class="why-ofi" id="ofi">
   <div class="why-head">
     <div>
-      <div class="why-label" data-i18n="why.label">Pourquoi PARLYM ?</div>
-      <h2 class="why-title" data-i18n-html="why.title">Là où l'ingénierie des procédés rencontre <em>la qualité opérationnelle.</em></h2>
+      <div class="why-label" data-i18n="why.label">Pourquoi ofi ?</div>
+      <h2 class="why-title" data-i18n-html="why.title">Là où mes <em>deux mondes</em> se rencontrent.</h2>
     </div>
     <div>
-      <p class="why-intro" data-i18n="why.intro">Chez PARLYM, mes deux forces se rejoignent : la <b>rigueur industrielle</b> apprise sur les procédés et la <b>discipline qualité</b> que je veux déployer au quotidien.</p>
-      <p class="why-intro" data-i18n="why.intro2">50 ans d'expertise, des projets stratégiques en Oil &amp; Gas, une filiale camerounaise à taille humaine qui monte en puissance : le cadre exact pour transformer un stage de 6 mois en tremplin long terme.</p>
+      <p class="why-intro" data-i18n="why.intro">Chez ofi, mes deux centres d'intérêt, la <b>rigueur industrielle</b> et la <b>discipline financière</b>, ne s'opposent pas : ils se rejoignent.</p>
+      <p class="why-intro" data-i18n="why.intro2">Comprendre une chaîne de production, c'est déjà comprendre un cycle de coûts. Sécuriser une matière première, c'est déjà sécuriser une marge. Rejoindre ofi, c'est travailler à l'intersection exacte de ce que je sais faire et de ce que je veux devenir.</p>
     </div>
   </div>
 
   <div class="why-dual">
     <div class="why-side">
       <div class="wn">01</div>
-      <div class="wt" data-i18n="why.left.title">Ingénierie &amp; procédés</div>
-      <div class="wd" data-i18n="why.left.desc">Standardisation, bilans matière et énergie, contrôle des opérations : les gestes que j'ai pratiqués sur le terrain et qui m'ont appris à lire un processus, suivre un écart et sécuriser une donnée.</div>
+      <div class="wt" data-i18n="why.left.title">Ingénierie des procédés</div>
+      <div class="wd" data-i18n="why.left.desc">Contrôle qualité, standardisation, bilans matière et énergie : les gestes que j'ai pratiqués sur le terrain et qui m'ont appris à lire une donnée, à suivre un écart et à sécuriser un process.</div>
       <div class="wl">
-        <span>Procédés</span>
-        <span>Standardisation</span>
+        <span>Qualité</span>
+        <span>Process</span>
         <span>Conformité</span>
       </div>
     </div>
     <div class="why-cross"><b>+</b></div>
     <div class="why-side">
       <div class="wn">02</div>
-      <div class="wt" data-i18n="why.right.title">Qualité &amp; Oil Gas</div>
-      <div class="wd" data-i18n="why.right.desc">ISO 9001:2015, audits internes, gestion des non-conformités, amélioration continue : les compétences que je veux mobiliser chez PARLYM pour faire vivre le SMQ au plus près des projets.</div>
+      <div class="wt" data-i18n="why.right.title">Finance &amp; contrôle</div>
+      <div class="wd" data-i18n="why.right.desc">Comptabilité financière, SAP, analyse de coûts : les compétences que je construis pour transformer une donnée brute en décision chiffrée, argumentée et partageable.</div>
       <div class="wl">
-        <span>ISO 9001</span>
-        <span>Audits</span>
-        <span>Non-conformités</span>
+        <span>SAP</span>
+        <span>Reporting</span>
+        <span>Audit</span>
       </div>
     </div>
   </div>
@@ -1318,8 +1321,8 @@ button{font-family:inherit}
 
 <section class="newsletter" id="contact">
   <div class="news-left rv">
-    <h2 data-i18n="contact.title">Prêt à rejoindre PARLYM Cameroun.</h2>
-    <p data-i18n="contact.p">Disponible pour le stage d'Ingénieur Qualité à Douala (6 mois) : déploiement du SMQ, audits et surveillance des processus, assurance qualité opérationnelle, gestion des non-conformités.</p>
+    <h2 data-i18n="contact.title">Prêt à rejoindre l'équipe Finance d'ofi.</h2>
+    <p data-i18n="contact.p">Disponible pour le poste de Finance Graduate Trainee à Douala : vérification des factures, saisie comptable sous SAP, rapprochements et reporting.</p>
   </div>
   <div class="news-right rv">
     <a href="tel:+237698385430" class="field"><span>+237 698 385 430</span></a>
@@ -1332,8 +1335,8 @@ button{font-family:inherit}
   <div>© 2026 Wongue Davy Cédric</div>
   <nav>
     <a href="#histoire" data-target="histoire" data-i18n="nav.parcours">Parcours</a>
-    <a href="#certificats" data-target="certificats" data-i18n="nav.certificats">Certifications</a>
-    <a href="#parlym" data-target="parlym" data-i18n="nav.parlym" class="nav-highlight">Pourquoi PARLYM</a>
+    <a href="#certificats" data-target="certificats" data-i18n="nav.certificats">Certificats</a>
+    <a href="#ofi" data-target="ofi" data-i18n="nav.ofi" class="nav-highlight">Pourquoi ofi</a>
     <a href="#contact" data-target="contact" data-i18n="nav.contact">Contact</a>
   </nav>
   <div class="socials">
@@ -1352,45 +1355,45 @@ button{font-family:inherit}
 <script>
 var I18N = {
   fr: {
-    'page.label': '0.1 : Candidature · Stagiaire Ingénieur Qualité',
+    'page.label': '0.1 : Candidature · Finance Graduate Trainee',
     'nav.parcours': 'Parcours',
-    'nav.certificats': 'Certifications',
-    'nav.parlym': 'Pourquoi PARLYM',
+    'nav.certificats': 'Certificats',
+    'nav.ofi': 'Pourquoi ofi',
     'nav.contact': 'Contact',
 
-    'hero.title': '<span class="word"><span>Ingénieur</span></span> <span class="word"><span>des</span></span> <span class="word"><span>procédés,</span></span> <span class="word"><span>qualité</span></span> <span class="word"><span><em>ISO&nbsp;9001</em></span></span> <span class="word"><span>&amp;</span></span> <span class="word"><span>Oil&nbsp;&amp;&nbsp;Gas.</span></span>',
-    'hero.lede': "Une candidature pour le stage d'Ingénieur Qualité chez PARLYM Cameroun : déploiement du SMQ, audits internes, gestion des non-conformités et amélioration continue.",
+    'hero.title': '<span class="word"><span>Ingénieur</span></span> <span class="word"><span>des</span></span> <span class="word"><span>procédés,</span></span> <span class="word"><span>certifié</span></span> <span class="word"><span><em>SAP</em></span></span> <span class="word"><span>&amp;</span></span> <span class="word"><span>comptabilité</span></span> <span class="word"><span>financière.</span></span>',
+    'hero.lede': "Une candidature pour le poste de Finance Graduate Trainee chez ofi Douala : rigueur analytique, souci du détail, intégrité.",
     'hero.link': 'Voir les documents',
-    'hero.role': 'Stagiaire Ingénieur Qualité',
+    'hero.role': 'Finance Graduate Trainee',
     'hero.meta1': 'Douala, Cameroun',
-    'hero.meta2': 'Disponible 6 mois',
+    'hero.meta2': 'Disponible',
     'scroll': 'Défiler',
 
-    'parcours.title': '<span class="word"><span>Quatre</span></span> <span class="word"><span>piliers</span></span> <span class="word"><span>pour</span></span> <span class="word"><span>la</span></span> <span class="word"><span>qualité.</span></span>',
-    'parcours.lede': "Diplômé ingénieur des procédés (2025), formé au management de la qualité et certifié en production et traitement du gaz naturel. Un profil construit pour déployer, auditer et améliorer un système qualité dans l'industrie pétrolière et gazière.",
+    'parcours.title': '<span class="word"><span>Le</span></span> <span class="word"><span>parcours,</span></span> <span class="word"><span>en</span></span> <span class="word"><span>quatre</span></span> <span class="word"><span>temps.</span></span>',
+    'parcours.lede': "Diplômé ingénieur des procédés (2025), formé à la comptabilité financière par l'Université de Pennsylvanie, certifié SAP Business Analyst et formé à l'audit interne. Une trajectoire qui relie l'exigence industrielle aux réflexes du contrôle financier.",
 
-    'card1.intro': "Un système qualité n'est pas un classeur : c'est une <em>discipline quotidienne</em> qui protège les opérations, les hommes et les délais.",
-    'card1.name': "L'exigence",
-    'card1.sub': 'Pourquoi la qualité ?',
+    'card1.intro': "Les principes financiers sont d'abord des principes de vie : ils apprennent à arbitrer, à anticiper, à préserver. <em>Mieux les comprendre, c'est décider mieux.</em>",
+    'card1.name': "L'appétence",
+    'card1.sub': 'Pourquoi la finance ?',
 
-    'card2.intro': "Auditer un processus, tracer une non-conformité, sécuriser une donnée : <em>les gestes du terrain sont ceux de l'assurance qualité.</em>",
-    'card2.name': 'Le contrôle',
-    'card2.sub': 'Audits &amp; non-conformités',
+    'card2.intro': "Vérifier une donnée, suivre un écart, sécuriser une information : <em>les gestes du contrôle qualité sont ceux du contrôle financier.</em>",
+    'card2.name': 'Le terrain',
+    'card2.sub': 'Contrôle, conformité, analyse',
 
-    'card3.intro': "ISO 9001:2015, Excel, reporting : des outils qui transforment une exigence normative en <em>processus documenté, mesurable et partageable.</em>",
+    'card3.intro': "SAP, Excel, reporting : des outils qui transforment une donnée brute en <em>décision chiffrée, argumentée et partageable.</em>",
     'card3.name': 'Les outils',
-    'card3.sub': 'ISO 9001 · Excel · reporting',
+    'card3.sub': 'SAP · Excel · reporting',
 
-    'card4.intro': "Oil &amp; Gas, un secteur qui ne laisse aucune place à l'approximation : <em>rigueur, méthode, anglais technique.</em>",
-    'card4.name': 'Le cap',
-    'card4.sub': 'Oil &amp; Gas · ISO 9001',
+    'card4.intro': "Diplôme et certifications : les fondations vérifiables d'une <em>reconversion assumée</em> vers la finance.",
+    'card4.name': 'Les preuves',
+    'card4.sub': 'Diplôme & certifications',
 
     'terrain.title': 'Le terrain. Cinq expériences industrielles, un même réflexe : vérifier.',
-    'terrain.p': "De la standardisation des procédés au contrôle qualité, j'ai appris à lire un dossier technique, à suivre un écart, à rédiger une non-conformité et à produire un reporting exploitable.",
-    'terrain.li1': '<b>Standardisation de procédés</b>, 3 postes formalisés (SOP, points de contrôle), gains mesurés : recyclage +40 %, arrêts −15 %.',
-    'terrain.li2': "<b>Accompagnement d'unités de production</b>, 04 sites appuyés (procédures, plans de maîtrise), variabilité réduite de 18 %.",
-    'terrain.li3': '<b>Bilans matière et énergie</b>, suivi d\'indicateurs, compromis stabilité/coût amélioré de 12 %.',
-    'terrain.li4': '<b>Contrôles qualité et conformité</b>, suivi QHSE, analyse des causes racines (Ishikawa).',
+    'terrain.p': "Du contrôle qualité à la standardisation des procédés, j'ai appris à lire un dossier, à suivre un écart et à produire un reporting fiable, les gestes du quotidien en Finance.",
+    'terrain.li1': "<b>Michele's Industries</b>, analyse sous Excel, 3 postes standardisés, contrôle de conformité ANOR. Recyclage +40 %, arrêts −15 %.",
+    'terrain.li2': '<b>AVRAM APTUS</b>, 04 micro-industries accompagnées (SOP, plans HACCP), variabilité réduite de 18 %.',
+    'terrain.li3': '<b>FBI, Food &amp; Beverages Industries</b>, bilans matière/énergie, compromis stabilité-coût amélioré de 12 %.',
+    'terrain.li4': '<b>OK Foods · SIC Cacao</b>, contrôles sanitaires, suivi QHSE, analyse Ishikawa.',
     'terrain.biglabel': 'Expériences',
 
     'info.field': 'Terrain',
@@ -1398,41 +1401,41 @@ var I18N = {
     'info.location.val': 'Douala, CM',
     'info.rigour': 'Rigueur',
 
-    'outils.title': 'Les outils. ISO 9001 côté norme, Excel côté analyse.',
-    'outils.p': "Les compétences attendues pour déployer un système de management de la qualité, auditer des processus, suivre des non-conformités et produire un reporting clair, sans jargon.",
-    'outils.li1': '<b>ISO 9001:2015</b> : déploiement, audit interne, amélioration continue',
-    'outils.li2': '<b>Oil &amp; Gas</b> : production et traitement du gaz naturel (L&amp;T Edutech)',
-    'outils.li3': "<b>Excel</b> : suivi d'indicateurs, tableaux de bord, gap analysis",
-    'outils.li4': '<b>Anglais technique</b> : C1, rédaction et communication professionnelle',
+    'outils.title': 'Les outils. SAP côté systèmes, Excel côté analyse.',
+    'outils.p': "Les compétences attendues pour saisir et suivre des transactions comptables, contrôler des rapprochements et produire du reporting, sans jargon, avec méthode.",
+    'outils.li1': '<b>SAP</b> : SAP Business Analyst Professional Certificate',
+    'outils.li2': '<b>Excel</b> : Excel Fundamentals for Data Analysis (Macquarie University)',
+    'outils.li3': '<b>Bureautique</b> : Word, PowerPoint',
+    'outils.li4': "<b>Analyse</b> : suivi d'indicateurs (KPI), gap analysis, rapprochements",
     'outils.link': 'Voir les certifications',
     'outils.biglabel': 'Certifications',
     'outils.stack': 'Stack technique',
-    'outils.certified': 'Formé',
-    'outils.certified2': 'Certifié',
+    'outils.certified': 'Certifié',
+    'outils.advanced': 'Avancé',
 
-    'certs.title': '<span class="word"><span>Certifications</span></span> <span class="word"><span>clés.</span></span>',
-    'certs.lede': "Diplôme, certification Oil &amp; Gas et niveau d'anglais : les preuves vérifiables directement alignées sur l'offre PARLYM.",
+    'certs.title': '<span class="word"><span>Certificats</span></span> <span class="word"><span>&amp;</span></span> <span class="word"><span>attestations.</span></span>',
+    'certs.lede': "Diplômes, certificats et attestations vérifiables. Cliquez sur une vignette pour agrandir l'aperçu.",
     'certs.loading': 'Chargement des documents…',
 
     'path.title': '<span class="word"><span>Une</span></span> <span class="word"><span>trajectoire,</span></span> <span class="word"><span>deux</span></span> <span class="word"><span>forces.</span></span>',
-    'path.lede': "De l'exigence industrielle vers le management de la qualité Oil &amp; Gas. La même discipline : comprendre, tracer, décider.",
+    'path.lede': "De l'excellence industrielle vers les compétences finance & data. La même exigence : comprendre, chiffrer, décider.",
     'chart.flow': 'Flux',
     'chart.range': 'parcours 2021 → 2025',
     'chart.perpetual': 'animation perpétuelle',
-    'chart.legend1': 'Ingénierie industrielle & procédés',
-    'chart.legend2': 'Qualité, audits & Oil Gas',
+    'chart.legend1': 'Excellence industrielle & qualité',
+    'chart.legend2': 'Compétences finance & data',
 
-    'why.label': 'Pourquoi PARLYM ?',
-    'why.title': "Là où l'ingénierie des procédés rencontre <em>la qualité opérationnelle.</em>",
-    'why.intro': "Chez PARLYM, mes deux forces se rejoignent : la <b>rigueur industrielle</b> apprise sur les procédés et la <b>discipline qualité</b> que je veux déployer au quotidien.",
-    'why.intro2': "50 ans d'expertise, des projets stratégiques en Oil & Gas, une filiale camerounaise à taille humaine qui monte en puissance : le cadre exact pour transformer un stage de 6 mois en tremplin long terme.",
-    'why.left.title': 'Ingénierie &amp; procédés',
-    'why.left.desc': "Standardisation, bilans matière et énergie, contrôle des opérations : les gestes que j'ai pratiqués sur le terrain et qui m'ont appris à lire un processus, suivre un écart et sécuriser une donnée.",
-    'why.right.title': 'Qualité &amp; Oil Gas',
-    'why.right.desc': "ISO 9001:2015, audits internes, gestion des non-conformités, amélioration continue : les compétences que je veux mobiliser chez PARLYM pour faire vivre le SMQ au plus près des projets.",
+    'why.label': 'Pourquoi ofi ?',
+    'why.title': 'Là où mes <em>deux mondes</em> se rencontrent.',
+    'why.intro': "Chez ofi, mes deux centres d'intérêt, la <b>rigueur industrielle</b> et la <b>discipline financière</b>, ne s'opposent pas : ils se rejoignent.",
+    'why.intro2': "Comprendre une chaîne de production, c'est déjà comprendre un cycle de coûts. Sécuriser une matière première, c'est déjà sécuriser une marge. Rejoindre ofi, c'est travailler à l'intersection exacte de ce que je sais faire et de ce que je veux devenir.",
+    'why.left.title': 'Ingénierie des procédés',
+    'why.left.desc': "Contrôle qualité, standardisation, bilans matière et énergie : les gestes que j'ai pratiqués sur le terrain et qui m'ont appris à lire une donnée, à suivre un écart et à sécuriser un process.",
+    'why.right.title': 'Finance & contrôle',
+    'why.right.desc': "Comptabilité financière, SAP, analyse de coûts : les compétences que je construis pour transformer une donnée brute en décision chiffrée, argumentée et partageable.",
 
-    'contact.title': 'Prêt à rejoindre PARLYM Cameroun.',
-    'contact.p': "Disponible pour le stage d'Ingénieur Qualité à Douala (6 mois) : déploiement du SMQ, audits et surveillance des processus, assurance qualité opérationnelle, gestion des non-conformités.",
+    'contact.title': "Prêt à rejoindre l'équipe Finance d'ofi.",
+    'contact.p': "Disponible pour le poste de Finance Graduate Trainee à Douala : vérification des factures, saisie comptable sous SAP, rapprochements et reporting.",
     'contact.btn': 'Télécharger le CV PDF',
 
     'soon.title': 'Aperçu en cours<br>de mise à jour',
@@ -1440,49 +1443,51 @@ var I18N = {
     'preview.loading': "Chargement de l'aperçu…",
 
     'doc.diplome': "Diplôme d'ingénieur des procédés, Université Catholique Saint-Jérôme de Douala",
+    'doc.penn': 'Fundamentals of Finance, University of Pennsylvania',
     'doc.c1english': "Certificat d'anglais niveau C1",
-    'doc.gas': 'Natural Gas Production and Processing, L&T Edutech'
+    'doc.sap': 'SAP Business Analyst Professional Certificate, SAP',
+    'doc.bloomberg': 'Bloomberg Market Concepts (BMC), Bloomberg'
   },
   en: {
-    'page.label': '0.1 : Application · Quality Engineer Intern',
+    'page.label': '0.1 : Application · Finance Graduate Trainee',
     'nav.parcours': 'Journey',
-    'nav.certificats': 'Certifications',
-    'nav.parlym': 'Why PARLYM',
+    'nav.certificats': 'Certificates',
+    'nav.ofi': 'Why ofi',
     'nav.contact': 'Contact',
 
-    'hero.title': '<span class="word"><span>Process</span></span> <span class="word"><span>Engineer,</span></span> <span class="word"><span>Quality</span></span> <span class="word"><span><em>ISO&nbsp;9001</em></span></span> <span class="word"><span>&amp;</span></span> <span class="word"><span>Oil&nbsp;&amp;&nbsp;Gas.</span></span>',
-    'hero.lede': "An application for the Quality Engineer Internship at PARLYM Cameroon: QMS deployment, internal audits, non-conformity management and continuous improvement.",
+    'hero.title': '<span class="word"><span>Process</span></span> <span class="word"><span>Engineer,</span></span> <span class="word"><span>certified</span></span> <span class="word"><span><em>SAP</em></span></span> <span class="word"><span>&amp;</span></span> <span class="word"><span>financial</span></span> <span class="word"><span>accounting.</span></span>',
+    'hero.lede': "An application for the Finance Graduate Trainee position at ofi Douala: analytical rigour, attention to detail, integrity.",
     'hero.link': 'View documents',
-    'hero.role': 'Quality Engineer Intern',
+    'hero.role': 'Finance Graduate Trainee',
     'hero.meta1': 'Douala, Cameroon',
-    'hero.meta2': 'Available 6 months',
+    'hero.meta2': 'Available',
     'scroll': 'Scroll',
 
-    'parcours.title': '<span class="word"><span>Four</span></span> <span class="word"><span>pillars</span></span> <span class="word"><span>for</span></span> <span class="word"><span>quality.</span></span>',
-    'parcours.lede': "Process engineering graduate (2025), trained in quality management and certified in natural gas production and processing. A profile built to deploy, audit and improve a quality system in the oil and gas industry.",
+    'parcours.title': '<span class="word"><span>The</span></span> <span class="word"><span>journey,</span></span> <span class="word"><span>in</span></span> <span class="word"><span>four</span></span> <span class="word"><span>stages.</span></span>',
+    'parcours.lede': "Process engineering graduate (2025), trained in financial accounting by the University of Pennsylvania, certified SAP Business Analyst and trained in internal auditing. A path that connects industrial rigour with the reflexes of financial control.",
 
-    'card1.intro': "A quality system is not a binder: it is a <em>daily discipline</em> that protects operations, people and deadlines.",
-    'card1.name': 'Rigour',
-    'card1.sub': 'Why quality?',
+    'card1.intro': "Financial principles are first principles of life: they teach us to arbitrate, anticipate, and preserve. <em>Understanding them better means deciding better.</em>",
+    'card1.name': 'The appetite',
+    'card1.sub': 'Why finance?',
 
-    'card2.intro': "Auditing a process, tracing a non-conformity, securing data: <em>the gestures of the field are those of quality assurance.</em>",
-    'card2.name': 'Control',
-    'card2.sub': 'Audits &amp; non-conformities',
+    'card2.intro': "Verifying a data point, tracking a variance, securing information: <em>the gestures of quality control are those of financial control.</em>",
+    'card2.name': 'The field',
+    'card2.sub': 'Control, compliance, analysis',
 
-    'card3.intro': "ISO 9001:2015, Excel, reporting: tools that turn a normative requirement into a <em>documented, measurable and shareable process.</em>",
+    'card3.intro': "SAP, Excel, reporting: tools that turn raw data into a <em>quantified, argued, and shareable decision.</em>",
     'card3.name': 'The tools',
-    'card3.sub': 'ISO 9001 · Excel · reporting',
+    'card3.sub': 'SAP · Excel · reporting',
 
-    'card4.intro': "Oil &amp; Gas, a sector with no room for approximation: <em>rigour, method, technical English.</em>",
-    'card4.name': 'The goal',
-    'card4.sub': 'Oil &amp; Gas · ISO 9001',
+    'card4.intro': "Degree and certifications: the verifiable foundations of an <em>assumed career shift</em> toward finance.",
+    'card4.name': 'The evidence',
+    'card4.sub': 'Degree & certifications',
 
     'terrain.title': 'The field. Five industrial experiences, one same reflex: verify.',
-    'terrain.p': "From process standardisation to quality control, I learned to read a technical file, track a variance, write a non-conformity and produce actionable reporting.",
-    'terrain.li1': '<b>Process standardisation</b>, 3 positions formalised (SOPs, control points), measured gains: recycling +40%, downtime −15%.',
-    'terrain.li2': '<b>Production units support</b>, 04 sites supported (procedures, control plans), variability reduced by 18%.',
-    'terrain.li3': '<b>Mass and energy balances</b>, KPI tracking, stability/cost trade-off improved by 12%.',
-    'terrain.li4': '<b>Quality and compliance controls</b>, QHSE monitoring, root cause analysis (Ishikawa).',
+    'terrain.p': "From quality control to process standardisation, I learned to read a file, track a variance, and produce reliable reporting, the everyday gestures of Finance.",
+    'terrain.li1': "<b>Michele's Industries</b>, Excel-based analysis, 3 positions standardised, ANOR compliance control. Packaging recycling +40%, unplanned downtime −15%.",
+    'terrain.li2': '<b>AVRAM APTUS</b>, 04 micro-industries supported (SOPs, HACCP plans), product variability reduced by 18%.',
+    'terrain.li3': '<b>FBI, Food &amp; Beverages Industries</b>, mass and energy balances, stability/cost trade-off improved by 12%.',
+    'terrain.li4': '<b>OK Foods · SIC Cacao</b>, sanitary controls, QHSE monitoring, Ishikawa analysis.',
     'terrain.biglabel': 'Experiences',
 
     'info.field': 'Field',
@@ -1490,41 +1495,41 @@ var I18N = {
     'info.location.val': 'Douala, CM',
     'info.rigour': 'Rigour',
 
-    'outils.title': 'The tools. ISO 9001 on the norm side, Excel on the analysis side.',
-    'outils.p': "The skills expected to deploy a quality management system, audit processes, track non-conformities and produce clear reporting, without jargon.",
-    'outils.li1': '<b>ISO 9001:2015</b>: deployment, internal audit, continuous improvement',
-    'outils.li2': '<b>Oil &amp; Gas</b>: natural gas production and processing (L&amp;T Edutech)',
-    'outils.li3': '<b>Excel</b>: KPI tracking, dashboards, gap analysis',
-    'outils.li4': '<b>Technical English</b>: C1, professional writing and communication',
+    'outils.title': 'The tools. SAP on the systems side, Excel on the analysis side.',
+    'outils.p': "The skills expected to enter and track accounting transactions, control reconciliations, and produce reporting, without jargon, with method.",
+    'outils.li1': '<b>SAP</b>: SAP Business Analyst Professional Certificate',
+    'outils.li2': '<b>Excel</b>: Excel Fundamentals for Data Analysis (Macquarie University)',
+    'outils.li3': '<b>Office</b>: Word, PowerPoint',
+    'outils.li4': "<b>Analysis</b>: KPI tracking, gap analysis, reconciliations",
     'outils.link': 'View certifications',
     'outils.biglabel': 'Certifications',
     'outils.stack': 'Technical stack',
-    'outils.certified': 'Trained',
-    'outils.certified2': 'Certified',
+    'outils.certified': 'Certified',
+    'outils.advanced': 'Advanced',
 
-    'certs.title': '<span class="word"><span>Key</span></span> <span class="word"><span>certifications.</span></span>',
-    'certs.lede': "Degree, Oil &amp; Gas certification and English level: the verifiable evidence directly aligned with the PARLYM offer.",
+    'certs.title': '<span class="word"><span>Certificates</span></span> <span class="word"><span>&amp;</span></span> <span class="word"><span>attestations.</span></span>',
+    'certs.lede': "Diplomas, certificates and verifiable attestations. Click a thumbnail to enlarge the preview.",
     'certs.loading': 'Loading documents…',
 
     'path.title': '<span class="word"><span>One</span></span> <span class="word"><span>path,</span></span> <span class="word"><span>two</span></span> <span class="word"><span>forces.</span></span>',
-    'path.lede': "From industrial rigour to Oil &amp; Gas quality management. The same discipline: understand, trace, decide.",
+    'path.lede': "From industrial excellence to finance & data skills. The same requirement: understand, quantify, decide.",
     'chart.flow': 'Flow',
     'chart.range': 'journey 2021 → 2025',
     'chart.perpetual': 'perpetual animation',
-    'chart.legend1': 'Industrial engineering & processes',
-    'chart.legend2': 'Quality, audits & Oil Gas',
+    'chart.legend1': 'Industrial excellence & quality',
+    'chart.legend2': 'Finance & data skills',
 
-    'why.label': 'Why PARLYM?',
-    'why.title': 'Where process engineering meets <em>operational quality.</em>',
-    'why.intro': "At PARLYM, my two strengths come together: the <b>industrial rigour</b> learned on processes and the <b>quality discipline</b> I want to deploy every day.",
-    'why.intro2': "50 years of expertise, strategic Oil & Gas projects, a human-sized Cameroonian subsidiary scaling up: the exact setting to turn a 6-month internship into a long-term springboard.",
-    'why.left.title': 'Engineering &amp; processes',
-    'why.left.desc': "Standardisation, mass and energy balances, operational control: the gestures I practised in the field and that taught me to read a process, track a variance and secure data.",
-    'why.right.title': 'Quality &amp; Oil Gas',
-    'why.right.desc': "ISO 9001:2015, internal audits, non-conformity management, continuous improvement: the skills I want to mobilise at PARLYM to keep the QMS alive, close to the projects.",
+    'why.label': 'Why ofi?',
+    'why.title': 'Where my <em>two worlds</em> meet.',
+    'why.intro': "At ofi, my two centres of interest, <b>industrial rigour</b> and <b>financial discipline</b>, do not oppose each other: they come together.",
+    'why.intro2': "Understanding a production line already means understanding a cost cycle. Securing a raw material already means securing a margin. Joining ofi means working at the exact intersection of what I know how to do and what I want to become.",
+    'why.left.title': 'Process engineering',
+    'why.left.desc': "Quality control, standardisation, mass and energy balances: the gestures I practised in the field and that taught me to read data, track a variance and secure a process.",
+    'why.right.title': 'Finance & control',
+    'why.right.desc': "Financial accounting, SAP, cost analysis: the skills I am building to turn raw data into a quantified, argued and shareable decision.",
 
-    'contact.title': 'Ready to join PARLYM Cameroon.',
-    'contact.p': "Available for the Quality Engineer Internship in Douala (6 months): QMS deployment, process audits and surveillance, operational quality assurance, non-conformity management.",
+    'contact.title': "Ready to join ofi's Finance team.",
+    'contact.p': "Available for the Finance Graduate Trainee position at ofi in Douala: invoice verification, accounting entry in SAP, reconciliations and reporting.",
     'contact.btn': 'Download CV PDF',
 
     'soon.title': 'Preview being<br>updated',
@@ -1532,8 +1537,10 @@ var I18N = {
     'preview.loading': 'Loading preview…',
 
     'doc.diplome': "Process Engineering Degree, Université Catholique Saint-Jérôme de Douala",
+    'doc.penn': 'Fundamentals of Finance, University of Pennsylvania',
     'doc.c1english': 'English Certificate Level C1',
-    'doc.gas': 'Natural Gas Production and Processing, L&T Edutech'
+    'doc.sap': 'SAP Business Analyst Professional Certificate, SAP',
+    'doc.bloomberg': 'Bloomberg Market Concepts (BMC), Bloomberg'
   }
 };
 
@@ -1721,17 +1728,19 @@ var counterIO=new IntersectionObserver(function(es){
 document.querySelectorAll('[data-count]').forEach(function(el){counterIO.observe(el)});
 
 /* ============================================================
-   CERTIFICATS — Certificats PARLYM (3)
-   Révélables : diplome, c1english
-   Verrouillé : gas
+   CERTIFICATS — Certificats OFI (5)
+   Révélables : diplome, penn, c1english
+   Verrouillés : sap, bloomberg
    ============================================================ */
 var renderCerts;
 
 (function(){
   var DOCUMENTS=[
     {key:'doc.diplome',   type:'image/jpeg', data:'diplome-ingenieur-wongue-davy-cedric.jpg', revealable:true},
+    {key:'doc.penn',      type:'image/jpeg', data:'certificat-penn-finance.jpg',              revealable:true},
     {key:'doc.c1english', type:'image/jpeg', data:'certificat-c1-anglais.jpg',                revealable:true},
-    {key:'doc.gas',       type:'image/jpeg', data:'certificat-natural-gas-lt-edutech.jpg',    revealable:false}
+    {key:'doc.sap',       type:'image/jpeg', data:'certificat-sap-business-analyst.jpg',      revealable:false},
+    {key:'doc.bloomberg', type:'image/jpeg', data:'certificat-bloomberg-bmc.jpg',             revealable:false}
   ];
   var grid=document.getElementById('certGrid');
   var empty=document.getElementById('certEmpty');
